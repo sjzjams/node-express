@@ -23,7 +23,7 @@ const request = require('request')
 const app = express()
 
 app.use('/', function(req, res) {
-  const url = 'https://fxb.tianfn.net:4443/creditvane-ui-api/rest/api/' + req.url
+  const url = 'https://www.v2ex.com/api' + req.url
   req.pipe(request(url)).pipe(res.set('Access-Control-Allow-Origin', '*'))
 })
 
