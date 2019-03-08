@@ -1,0 +1,35 @@
+<script>
+    // (function(){
+    //     baz=5;
+    //     var bar=10;
+    // })();
+    // console.log(baz);
+    // //console.log(bar);
+    // var nul = null;
+    // console.log(typeof nul)
+    // (function(){
+    //     var foo=1;
+    //     function bar() {
+    //         var foo=2;
+    //     }
+    //     bar()
+    //     console.log(foo)
+    //     if(true){
+    //         var foo=3
+    //     }
+    //     console.log(foo)
+    // })();
+    (function () {
+        function foo(x) {
+            var baz=3;
+            return function(y){
+                console.log(x+y+(++baz))
+            }
+        }
+        var moo=foo(2);
+        moo(1);
+        moo(1);
+    })();
+
+
+</script>
